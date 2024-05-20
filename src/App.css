@@ -1,4 +1,37 @@
-.App {
+/* header {
+	display: grid;
+	grid-template-columns: 100px 100px 100px;
+	grid-template-rows: 2fr 1fr;
+}
+header img{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 180px;
+}
+nav ul{
+  list-style-type: none;
+  background-color: hsl(0,0%,25%);
+  padding: 0px;
+  margin: 10px;
+  overflow: hidden;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+nav a:hover{
+  background-color: hsl(0,0%,10%);
+}
+
+nav li{
+  float: left;
+} */
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +68,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
