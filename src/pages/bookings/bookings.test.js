@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Reservation from './Reservation';
+import Bookings from './Bookings';
 
 describe('Reservation page', () => {
   const timeFormat = /^([0-1]?[0-9]|2[0-3]):[0-5][0-9]$/;
@@ -8,7 +8,7 @@ describe('Reservation page', () => {
   test('should have one or more available booking time options', async () => {
     render(
       <MemoryRouter>
-        <Reservation />
+        <Bookings />
       </MemoryRouter>
     );
 
@@ -23,7 +23,7 @@ describe('Reservation page', () => {
   test('should update available booking time options when changing booking date', async() => {
     render(
       <MemoryRouter>
-        <Reservation />
+        <Bookings />
       </MemoryRouter>
     );
 

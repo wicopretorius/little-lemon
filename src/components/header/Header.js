@@ -9,7 +9,7 @@ import pages from '../../utils/pages';
 const navLinks = Array.from(pages.values()).filter(page => page.anchorable);
 
 const Header = () => {
-  const { pathname } = useLocation();
+
   const [isNavExpanded, setIsNavExpanded] = useState(false);
 
   return (
@@ -33,10 +33,7 @@ const Header = () => {
         >
           {navLinks.map((navLink, index) => 
             <li key={index}>
-              <Link 
-                className={pathname === navLink.path ? 'current-location' : ''} 
-                to={navLink.path}
-              >
+              <Link className={navLink.path } to={navLink.path}>
                 {navLink.name}
               </Link>
             </li>
